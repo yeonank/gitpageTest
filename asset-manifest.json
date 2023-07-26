@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "https://yeonank.github.io/gitpageTest/static/js/main.bfe33a8f.js",
+    "main.js": "https://yeonank.github.io/gitpageTest/static/js/main.6f758232.js",
     "index.html": "https://yeonank.github.io/gitpageTest/index.html",
-    "main.bfe33a8f.js.map": "https://yeonank.github.io/gitpageTest/static/js/main.bfe33a8f.js.map"
+    "main.6f758232.js.map": "https://yeonank.github.io/gitpageTest/static/js/main.6f758232.js.map"
   },
   "entrypoints": [
-    "static/js/main.bfe33a8f.js"
+    "static/js/main.6f758232.js"
   ]
 }
