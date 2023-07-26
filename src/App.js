@@ -7,19 +7,15 @@ import Home from "./routes/Home";
 import Detail from "./routes/Detail";
 
 function App() {
-    console.log("app에 들어옴/", window.location.pathname);
-    console.log("app에 들어!", process.env.PUBLIC_URL);
     return (
-    <Router>
+    <Router >
         <Routes>
             <Route exact path="/movie/:id" element={<Detail/>}>
-
             </Route>
 
             <Route exact path="/" element={<Home/>}>
             </Route>
         </Routes>
-        
     </Router>
   );
 }
