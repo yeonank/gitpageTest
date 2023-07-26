@@ -1,5 +1,5 @@
 import {
-    HashRouter as Router,
+    BrowserRouter as Router,
     Routes,
     Route,
 } from "react-router-dom";
@@ -7,15 +7,18 @@ import Home from "./routes/Home";
 import Detail from "./routes/Detail";
 
 function App() {
+    console.log("app에 들어옴/", window.location.pathname);
+    console.log("app에 들어!", process.env.PUBLIC_URL);
     return (
-    <Router >
+    <Router basename={process.env.PUBLIC_URL}>
         <Routes>
-            <Route exact path="/movie/:id" element={<Detail/>}>
+            <Route path="/movie/:id" element={<Detail/>}>
             </Route>
 
-            <Route exact path="/" element={<Home/>}>
+            <Route path="/" element={<Home/>}>
             </Route>
         </Routes>
+        
     </Router>
   );
 }
